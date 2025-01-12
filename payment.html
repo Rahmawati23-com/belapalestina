@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Select Payment Method</h2>
+        <div class="text-center">
+            <button id="pay-button" class="btn btn-primary">Pay Now</button>
+        </div>
+    </div>
+
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="YOUR_CLIENT_KEY"></script>
+    <script>
+        document.getElementById('pay-button').addEventListener('click', function () {
+            fetch('/create-transaction', { method: 'POST' }) // Request to your backend
+                .then(response => response.json())
+                .then(data => {
+                    snap.pay(data.token); // Use the token from your backend
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peduli Palestina - Galang Dana Kemanusiaan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="index.html">
+            <img src="./../image/logo-02.png" alt="Logo" width="120%" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="program.html">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="kontak.html">FAQ & Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Carousel Hero Section -->
+    <section id="beranda" class="carousel-hero">
+        <div id="heroPalestina" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroPalestina" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroPalestina" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroPalestina" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./../image/palestine-03-02.png" class="d-block w-100" alt="Situasi Palestina 1">
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Kemanusiaan Tak Mengenal Batas</h1>
+                        <p>Situasi di Palestina membutuhkan perhatian dan bantuan kita.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./../image/palestine-04-03.png" class="d-block w-100" alt="Situasi Palestina 2">
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Bersama Membantu Palestina</h1>
+                        <p>Setiap tindakan kemanusiaan berarti bagi mereka yang menderita.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./../image/palestine-05-04.png" class="d-block w-100" alt="Situasi Palestina 3">
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Solidaritas Tanpa Batas</h1>
+                        <p>Mari bersatu membantu saudara kita di Palestina.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroPalestina" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroPalestina" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Tentang Palestina Section -->
+    <section id="tentang" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Mengapa Kita Perlu Membantu Palestina?</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <p>Situasi kemanusiaan di Palestina saat ini sangat memprihatinkan. Ribuan warga sipil, termasuk anak-anak, menghadapi krisis yang berkepanjangan.</p>
+                    <div class="crisis-list mt-4">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <i class="fas fa-utensils text-primary mb-3"></i>
+                                        <h5>Krisis Pangan</h5>
+                                        <p>Ribuan warga mengalami keterbatasan akses makanan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <i class="fas fa-hospital text-primary mb-3"></i>
+                                        <h5>Krisis Kesehatan</h5>
+                                        <p>Infrastruktur kesehatan hancur dan fasilitas medis terputus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="program" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Program Terbaru</h2>
+            <div class="row g-4">
+                <!-- Program 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./../image/sedekah-07.png" class="card-img-top" alt="Awali Harimu dengan Sedekah Subuh">
+                        <div class="card-body">
+                            <p class="small-text text-muted mb-1">Terkini</p> 
+                            <h5 class="card-title">Awali Harimu dengan Sedekah Subuh</h5>
+                            <p>Donasi Terkumpul: <strong>Rp 749.789</strong></p>
+                            <div class="divider"></div>
+                            <p>Donatur: <strong>74</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./../image/sedekah-09.png" class="card-img-top" alt="Sedekah Al Quran untuk Masa Depan">
+                        <div class="card-body">
+                            <p class="small-text text-muted mb-1">Terkini</p> 
+                            <h5 class="card-title">Sedekah Al Quran untuk Masa Depan</h5>
+                            <p>Donasi Terkumpul: <strong>Rp 2.457.946</strong></p>
+                            <div class="divider"></div>
+                            <p>Donatur: <strong>31</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./../image/sedekah-10.png" class="card-img-top" alt="Pilar Lingkungan Lazismu">
+                        <div class="card-body">
+                            <p class="small-text text-muted mb-1">Terkini</p> 
+                            <h5 class="card-title">Peduli Lingkungan</h5>
+                            <p>Donasi Terkumpul: <strong>Rp 160.895</strong></p>
+                            <div class="divider"></div>
+                            <p>Donatur: <strong>3</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tombol Tampilkan Program Lebih Banyak -->
+            <div class="text-center mt-4">
+                <a href="program.html" class="btn btn-success">Tampilkan Program Lebih Banyak</a>
+            </div>            
+        </div>
+    </section>    
+
+        <!-- Tim Penggalang Dana Section -->
+        <section id="donasi" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Tim Penggalang Dana</h2>
+                <div class="row g-4">
+                    <!-- Anggota Tim -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img src="./../image/team/rahma-01.png" class="rounded-circle mb-3" alt="Muhammad Rizki" width="150" height="150">
+                                <h4>Rahmawati Ibrahim</h4>
+                                <p>Koordinator Utama</p>
+                                <!-- Ikon Instagram dan Email -->
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="https://www.instagram.com/rhmarvg" target="_blank" class="btn btn-outline-primary mx-2">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img src="./../image/team/tia-04.png" class="rounded-circle mb-3" alt="Muhammad Rizki" width="150" height="150">
+                                <h4>Kibtia Umaroh</h4>
+                                <p>Koordinator Utama</p>
+                                <!-- Ikon Instagram dan Email -->
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="https://www.instagram.com/kibtiaumar" target="_blank" class="btn btn-outline-primary mx-2">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img src="./../image/team/tazkia.jpg" class="rounded-circle mb-3" alt="Anisa Nurhaliza" width="150" height="150">
+                                <h4>Tazkia Badzlina</h4>
+                                <p>Koordinator Donasi</p>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="https://www.instagram.com/tazkiabzln" target="_blank" class="btn btn-outline-primary mx-2">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img src="./../image/team/arya.jpg" class="rounded-circle mb-3" alt="Anisa Nurhaliza" width="150" height="150">
+                                <h4>Arya Pamungkas</h4>
+                                <p>Koordinator Donasi</p>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="https://www.instagram.com/aryailhampmngks" target="_blank" class="btn btn-outline-primary mx-2">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img src="./../image/team/nauval.jpg" class="rounded-circle mb-3" alt="Anisa Nurhaliza" width="150" height="150">
+                                <h4>Nauval Ramadhan Krisani</h4>
+                                <p>Koordinator Donasi</p>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="https://www.instagram.com/_nauvalrk" target="_blank" class="btn btn-outline-primary mx-2">
+                                        <i class="fab fa-instagram"></i> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="chat-widget">
+            <a href="https://wa.me/6281384930103" target="_blank" class="chat-link">
+                <div class="chat-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="chat-text">
+                    Chat Kami Sekarang
+                </div>
+            </a>
+        </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Alamat -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold">Alamat</h5>
+                <p>Jalan Kemanusiaan No. 123<br>Jakarta, Indonesia 10110</p>
+                <p>Email: <a href="mailto:info@pedulipalestina.org" class="text-light">info@pedulipalestina.org</a></p>
+                <p>Telp: +62 812-3456-7890</p>
+            </div>
+            <!-- Menu "Peduli Palestina" -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold">Peduli Palestina</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-light text-decoration-none">Profile</a></li>
+                    <li><a href="team.html" class="text-light text-decoration-none">Our Team</a></li>
+                    <li><a href="kontak.html" class="text-light text-decoration-none">FAQ & Contact</a></li>
+                </ul>
+            </div>
+            <!-- Media Sosial -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">Ikuti Kami</h5>
+                <div class="d-flex">
+                    <a href="https://facebook.com" target="_blank" class="text-light me-3">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-light me-3">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-light me-3">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 Peduli Palestina. Semua Hak Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS dan Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

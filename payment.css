@@ -1,0 +1,82 @@
+body {
+    background-color: #f9f9f9; /* Warna latar belakang yang serupa */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.payment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-options {
+    margin-top: 30px;
+}
+
+.payment-option .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-option .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-option .card-img-container {
+    padding: 15px;
+    background-color: #f4f4f4; /* Latar belakang gambar untuk kesan bersih */
+}
+
+.payment-option .card-img-top {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.payment-option .card-body {
+    padding: 20px;
+}
+
+.payment-option .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.payment-option .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.payment-option .btn {
+    background-color: #007bff;
+    border: none;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.payment-option .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .payment-options {
+        flex-direction: column;
+    }
+    .payment-option {
+        margin-bottom: 20px;
+    }
+}

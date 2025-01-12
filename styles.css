@@ -1,0 +1,710 @@
+/* Global Styles */
+body {
+    padding-top: 72px; /* Untuk memberikan ruang pada body agar tidak tertutup oleh fixed navbar */
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* Warna latar belakang global */
+    margin: 0;
+}
+
+
+/* Navbar */
+.navbar {
+    font-size: 1rem; /* Ukuran font menu */
+    letter-spacing: 0.5px; /* Jarak antar huruf */
+    padding: 16px 20px; /* Lebarkan padding untuk membuat navbar lebih besar */
+    background-color: #fff; /* Warna latar navbar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek floating */
+    position: fixed; /* Navbar tetap di atas saat scroll */
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Pastikan navbar berada di atas elemen lainnya */
+    transition: all 0.3s ease; /* Tambahkan animasi transisi */
+}
+
+.navbar .nav-link {
+    font-weight: 600; /* Jadikan teks lebih tebal */
+    padding: 10px 15px; /* Lebarkan area klik */
+    color: #000; /* Warna teks hitam */
+    text-transform: capitalize; /* Semua teks menu dimulai dengan huruf besar */
+    transition: all 0.3s ease; /* Animasi hover */
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: #006400; /* Warna hijau gelap saat hover */
+    text-decoration: underline;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem; /* Besarkan teks brand */
+    font-weight: bold; /* Tebalkan teks */
+    color: #000; /* Warna hitam */
+    transition: color 0.3s ease; /* Animasi hover */
+}
+
+.navbar .navbar-brand:hover {
+    color: #006400; /* Hijau gelap saat hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 0.9rem; /* Ukuran font lebih kecil pada layar kecil */
+        padding: 10px 15px;
+    }
+    .navbar .nav-link {
+        padding: 8px 10px; /* Sesuaikan padding untuk layar kecil */
+    }
+}
+
+/* Carousel Hero Section */
+.carousel-hero {
+    position: relative;
+}
+
+.carousel-hero .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-hero .carousel-caption {
+    bottom: 30%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-hero .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-hero .carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Crisis List Section */
+.crisis-list .card {
+    transition: transform 0.3s ease;
+}
+
+.crisis-list .card:hover {
+    transform: translateY(-10px);
+}
+
+.crisis-list .card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Team Section */
+#donasi .card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+#donasi .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#donasi .card img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#donasi .card:hover img {
+    transform: scale(1.1);
+}
+
+/* Tombol Instagram dan Email */
+.card-body a.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.card-body a.btn i {
+    font-size: 1.2rem;
+}
+
+/* Hover Effects */
+.card-body a.btn:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+/* Tombol Media Sosial */
+.share-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.share-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #212529; /* Warna latar belakang gelap */
+    color: #f8f9fa; /* Warna teks putih */
+    padding: 30px 0;    
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #f8f9fa; /* Warna tautan putih */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #006400; /* Warna hijau gelap saat hover */
+    text-decoration: underline;
+}
+
+footer .fab {
+    transition: transform 0.3s ease;
+}
+
+footer .fab:hover {
+    transform: scale(1.2); /* Perbesar ikon saat hover */
+}
+
+.profile-link.active {
+    color: #006400; /* Ubah warna menjadi hijau gelap */
+    text-decoration: underline; /* Tambahkan garis bawah */
+}
+
+.card-body {
+    background-color: #ebebeb; /* Ubah warna latar belakang sesuai keinginan */
+    color: #333; /* Ubah warna teks */
+    border-radius: 10px; /* Untuk tampilan lebih estetis */
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+}
+
+.btn-warning {
+    font-weight: bold;
+    background-color: #006400;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #ff0b0b;
+    color: #fff;
+}
+
+.text-muted {
+    font-size: 0.8rem;
+}
+
+.text-primary {
+    font-weight: bold;
+}
+
+.text-center a {
+    font-size: 0.9rem;
+}
+
+.progress-container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+  
+.progress-container p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.progress {
+    width: 90%; /* Ganti dengan persentase yang diinginkan */
+    height: 100%;
+    background-color: #006400;
+}
+  
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+  /* Formulir Donasi */
+#form-donasi {
+    width: 40%; /* Batasi lebar menjadi 40% dari layar */
+    margin: 15px auto; /* Posisikan di tengah dengan margin horizontal auto */
+    margin-top: 20px; /* Jarak dari elemen lain di atasnya */
+    padding: 20px; /* Ruang di dalam formulir */
+    border: 1px solid #ddd; /* Border sederhana */
+    border-radius: 8px; /* Sudut melengkung */
+    background-color: #ffffff; /* Warna latar belakang putih */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+    font-size: 14px; /* Ukuran font default */
+}
+
+#form-donasi h4 {
+    margin-bottom: 20px; /* Jarak bawah */
+    font-weight: bold; /* Teks tebal */
+    color: #333; /* Warna teks gelap */
+    text-align: center; /* Pusatkan teks */
+}
+
+#form-donasi .form-label {
+    font-weight: bold; /* Teks label tebal */
+    color: #555; /* Warna teks label */
+    font-size: 13px; /* Ukuran font label */
+}
+
+#form-donasi .form-control {
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 10px; /* Ruang dalam */
+    font-size: 14px; /* Ukuran font */
+    color: #333; /* Warna teks */
+    background-color: #f8f9fa; /* Warna latar input */
+    transition: border-color 0.3s ease; /* Animasi saat fokus */
+}
+
+#form-donasi .form-control:focus {
+    border-color: #006400; /* Warna hijau gelap saat fokus */
+    box-shadow: 0px 0px 5px rgba(0, 100, 0, 0.2); /* Bayangan saat fokus */
+    outline: none; /* Hilangkan outline default */
+}
+
+#form-donasi .btn {
+    margin-top: 15px; /* Jarak atas tombol */
+    padding: 10px; /* Ruang dalam tombol */
+    font-size: 16px; /* Ukuran font tombol */
+    font-weight: bold; /* Teks tombol tebal */
+    background-color: #006400; /* Warna tombol hijau gelap */
+    color: #fff; /* Warna teks tombol putih */
+    align-items: center;
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Pointer saat hover */
+    transition: all 0.3s ease; /* Animasi hover */
+}
+
+#form-donasi .btn:hover {
+    background-color: #004d00; /* Warna hijau lebih gelap saat hover */
+}
+
+#form-donasi .form-check-label {
+    font-size: 13px; /* Ukuran font untuk checkbox */
+    color: #333; /* Warna teks */
+}
+
+#form-donasi .small-text {
+    font-size: 12px; /* Ukuran font kecil */
+    color: #999; /* Warna teks abu-abu */
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 576px) {
+    #form-donasi {
+        padding: 15px; /* Sesuaikan padding */
+    }
+
+    #form-donasi h4 {
+        font-size: 18px; /* Ukuran font judul */
+    }
+
+    #form-donasi .form-control {
+        font-size: 13px; /* Ukuran font input */
+    }
+
+    #form-donasi .btn {
+        font-size: 14px; /* Ukuran font tombol */
+    }
+}
+
+#program-info {
+    width: 100%; 
+    max-width: 560px;
+    margin-top: 50px;
+    margin: 0 auto; /* Card berada di tengah */
+    border: 1px solid #ffffff; /* Border halus */
+    border-radius: 8px; /* Sudut melengkung */
+    background-color: #ffffff; /* Warna latar putih */
+    box-shadow: 0 2px 5px rgba(35, 35, 35, 0.1); /* Tambahkan sedikit bayangan */
+    overflow: hidden; /* Potong elemen yang melebihi area card */
+}
+
+#program-info .card-body {
+    display: flex;
+    background-color: #ffffff; /* Warna latar putih */
+    align-items: center;
+    padding: 20px;
+}
+
+#program-info .program-image {
+    width: 120px; /* Ukuran gambar */
+    height: 80px;
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    border-radius: 5px; /* Sedikit lengkung pada gambar */
+}
+
+#program-info .program-details {
+    margin-left: 20px;
+}
+
+#program-info .program-title {
+    font-size: 1.2rem;
+    color: #000; /* Warna teks hitam */
+}
+
+#program-info .text-muted {
+    font-size: 0.9rem;
+}
+
+header {
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto; 
+}
+
+.container {
+    margin-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h2 {
+    color: black;
+}
+
+/* Gunakan Grid untuk Metode Pembayaran */
+.payment-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.payment-title i {
+    margin-right: 10px;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.payment-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.payment-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.payment-option img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-hero .carousel-item img {
+        height: 50vh;
+    }
+
+    .carousel-hero .carousel-caption h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-hero .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsiveness untuk Formulir Donasi */
+@media (max-width: 768px) {
+    #form-donasi {
+        width: 90%; /* Ubah lebar menjadi 90% layar */
+        margin: 10px auto; /* Pusatkan dengan margin */
+        padding: 15px; /* Sesuaikan padding untuk kenyamanan */
+        font-size: 14px; /* Pertahankan ukuran font yang nyaman */
+    }
+
+    #form-donasi h4 {
+        font-size: 18px; /* Perbesar teks judul agar tetap terlihat jelas */
+    }
+
+    #form-donasi .form-control {
+        font-size: 13px; /* Ukuran font yang lebih kecil untuk input */
+        padding: 8px; /* Kurangi padding untuk input */
+    }
+
+    #form-donasi .btn {
+        padding: 12px; /* Perbesar tombol untuk kenyamanan */
+        font-size: 14px; /* Sesuaikan ukuran font tombol */
+    }
+}
+
+/* FAQ Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.search-input {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Chat Widget Styling */
+.chat-widget {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    z-index: 1000; /* Pastikan berada di atas elemen lain */
+}
+
+.chat-link {
+    display: flex;
+    align-items: center;
+    background-color: #006838; /* Warna merah khas Instagram */
+    color: white; /* Warna teks putih */
+    padding: 10px 15px; /* Padding dalam widget */
+    border-radius: 50px; /* Bentuk membulat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan */
+    text-decoration: none; /* Hilangkan garis bawah default link */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animasi hover */
+}
+
+.chat-link:hover {
+    background-color: #000;
+    transform: scale(1.05); /* Efek zoom */
+}
+
+.chat-icon {
+    font-size: 20px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.chat-text {
+    font-size: 14px; /* Ukuran teks */
+    font-weight: bold;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .chat-link {
+        padding: 8px 12px; /* Sesuaikan padding */
+        font-size: 12px; /* Ukuran font lebih kecil */
+    }
+
+    .chat-icon {
+        font-size: 18px; /* Ikon sedikit lebih kecil */
+    }
+
+    .chat-text {
+        display: none; /* Sembunyikan teks di layar kecil */
+    }
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .info-item i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contact-info .info-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form .form-control {
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.contact-form .btn-primary {
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.map-container {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+    .contact-header p {
+        font-size: 0.9rem;
+    }
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+/* Styling untuk Program Section */
+#program {
+    background-color: #f9f9f9;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.divider {
+    height: 8px;
+    background-color: #f58220; /* Warna oranye */
+    margin: 10px 0; /* Jarak atas dan bawah */
+    border-radius: 50px; /* Membuat ujung garis melengkung */
+    border: none;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #b71c1c;
+}

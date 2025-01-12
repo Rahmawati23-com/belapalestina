@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Metode Pembayaran</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="./../image/logo-02.png" alt="Logo" width="120%" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="program.html">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="kontak.html">FAQ & Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br><br>
+
+<!--Payment-->
+<div class="container py-5">
+    <div class="payment-container mx-auto">
+        <div class="payment-title">
+            <i class="fas fa-credit-card"></i>
+            Payment
+        </div>
+        <div class="payment-grid">
+            <div class="payment-option">
+                <img src="./../image/payment/qris.jpg" alt="QRIS" onclick="displayThankYou('QRIS')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/mastercard.jpg" alt="MasterCard" onclick="displayThankYou('MasterCard')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/visa.jpg" alt="Visa" onclick="displayThankYou('Visa')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/bca.jpg" alt="BCA" onclick="displayThankYou('BCA')">
+            </div>  
+            <div class="payment-option">
+                <img src="./../image/payment/bni.jpg" alt="BNI" onclick="displayThankYou('BNI')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/bri.jpg" alt="BRI" onclick="displayThankYou('BRI')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/bsi.jpg" alt="BSI" onclick="displayThankYou('BSI')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/CIMB.jpg" alt="CIMB" onclick="displayThankYou('CIMB')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/mandiri.jpg" alt="Mandiri" onclick="displayThankYou('Mandiri')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/permatabank.jpg" alt="PermataBank" onclick="displayThankYou('permata bank')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/alfamart.jpg" alt="Alfamart" onclick="displayThankYou('Alfamart')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/indomaret.jpg" alt="Indomaret" onclick="displayThankYou('Indomaret')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/danamon.jpg" alt="Danamon" onclick="displayThankYou('Danamon')">
+            </div><div class="payment-option">
+                <img src="./../image/payment/doku.jpg" alt="Doku" onclick="displayThankYou('Doku')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/gopay.png" alt="Gopay" onclick="displayThankYou('Gopay')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/shopepay.png" alt="ShopeePay" onclick="displayThankYou('shopepay')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/ovo.jpg" alt="ovo" onclick="displayThankYou('OVO')">
+            </div>
+            <div class="payment-option">
+                <img src="./../image/payment/kredivo.jpg" alt="kredivo" onclick="displayThankYou('kredivo')">
+            </div>
+        </div>
+        <!-- Tempat untuk mencetak pesan terima kasih -->
+        <div id="thank-you-message" class="mt-4 text-center text-success fw-bold"></div>
+    </div>
+</div>
+
+<div class="chat-widget">
+    <a href="https://wa.me/6281384930103" target="_blank" class="chat-link">
+        <div class="chat-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="chat-text">
+            Chat Kami Sekarang
+        </div>
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Alamat -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold">Alamat</h5>
+                <p>Jalan Kemanusiaan No. 123<br>Jakarta, Indonesia 10110</p>
+                <p>Email: <a href="mailto:info@pedulipalestina.org" class="text-light">info@pedulipalestina.org</a></p>
+                <p>Telp: +62 812-3456-7890</p>
+            </div>
+            <!-- Menu "Peduli Palestina" -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold">Peduli Palestina</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-light text-decoration-none">Profile</a></li>
+                    <li><a href="team.html" class="text-light text-decoration-none">Our Team</a></li>
+                    <li><a href="kontak.html" class="text-light text-decoration-none">FAQ & Contact</a></li>
+                </ul>
+            </div>
+            <!-- Media Sosial -->
+            <div class="col-md-4">
+                <h5 class="fw-bold">Ikuti Kami</h5>
+                <div class="d-flex">
+                    <a href="https://facebook.com" target="_blank" class="text-light me-3">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-light me-3">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-light me-3">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 Peduli Palestina. Semua Hak Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    function displayThankYou(method) {
+        // Dapatkan elemen untuk pesan
+        const messageElement = document.getElementById('thank-you-message');
+        // Perbarui teks elemen dengan pesan terima kasih
+        messageElement.innerHTML = "Terima kasih sudah membayar menggunakan " + method + "!";
+    }
+</script>
+</body>
+</html>
